@@ -57,7 +57,6 @@ const App: () => React$Node = () => {
                 source={require('./icon/search.png')}></Image>
             </View>
             {/* Promo */}
-
             <View
               style={{
                 width: 35,
@@ -66,6 +65,46 @@ const App: () => React$Node = () => {
               }}>
               <Image source={require('./icon/promo.png')}></Image>
             </View>
+          </View>
+          
+          <View
+            style={{
+              marginHorizontal: 17,
+              marginTop:8,
+              
+            }}>
+              {/* Gopay */}
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                backgroundColor: '#2c5fb8',
+                borderTopLeftRadius: 4,
+                borderTopRightRadius: 4,
+                padding: 14,           
+              }}>
+              <Image source={require('./icon/gopay.png')}></Image>
+              <Text style={{color: 'white', fontSize: 17, fontWeight: "bold"}}>Rp 50.000</Text>
+            </View>
+            <View style={{flexDirection:'row', paddingTop: 20, paddingBottom:14, backgroundColor:'#2f65bd', borderBottomLeftRadius:4, borderBottomRightRadius:4}}>
+              <View style={{ flex:1, alignItems:"center"}}>
+              <Image source={require('./icon/pay.png')}></Image>
+                <Text style={{fontSize: 13, color:'white', marginTop:15, fontWeight:"bold"}}>Pay</Text>
+              </View>
+              <View style={{ flex:1, alignItems:"center"}}>
+              <Image source={require('./icon/nearby.png')}></Image>
+                <Text style={{fontSize: 13, color:'white', marginTop:15, fontWeight:"bold"}}>Nearby</Text>
+              </View>
+              <View style={{ flex:1, alignItems:"center"}}>
+              <Image source={require('./icon/topup.png')}></Image>
+                <Text style={{fontSize: 13, color:'white', marginTop:15, fontWeight:"bold"}}>Top Up</Text>
+              </View>
+              <View style={{ flex:1, alignItems:"center"}}>
+              <Image source={require('./icon/more.png')}></Image>
+                <Text style={{fontSize: 13, color:'white', marginTop:15, fontWeight:"bold"}}>More</Text>
+              </View>
+            </View>
+
           </View>
         </View>
 
