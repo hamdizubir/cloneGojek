@@ -67,13 +67,12 @@ const App: () => React$Node = () => {
             </View>
           </View>
           
+          {/* Gopay Section */}
           <View
             style={{
               marginHorizontal: 17,
-              marginTop:8,
-              
+              marginTop: 8,
             }}>
-              {/* Gopay */}
             <View
               style={{
                 flexDirection: 'row',
@@ -81,33 +80,131 @@ const App: () => React$Node = () => {
                 backgroundColor: '#2c5fb8',
                 borderTopLeftRadius: 4,
                 borderTopRightRadius: 4,
-                padding: 14,           
+                padding: 14,
               }}>
               <Image source={require('./icon/gopay.png')}></Image>
-              <Text style={{color: 'white', fontSize: 17, fontWeight: "bold"}}>Rp 50.000</Text>
+              <Text style={{color: 'white', fontSize: 17, fontWeight: 'bold'}}>
+                Rp 50.000
+              </Text>
             </View>
-            <View style={{flexDirection:'row', paddingTop: 20, paddingBottom:14, backgroundColor:'#2f65bd', borderBottomLeftRadius:4, borderBottomRightRadius:4}}>
-              <View style={{ flex:1, alignItems:"center"}}>
-              <Image source={require('./icon/pay.png')}></Image>
-                <Text style={{fontSize: 13, color:'white', marginTop:15, fontWeight:"bold"}}>Pay</Text>
+            <View
+              style={{
+                flexDirection: 'row',
+                paddingTop: 20,
+                paddingBottom: 14,
+                backgroundColor: '#2f65bd',
+                borderBottomLeftRadius: 4,
+                borderBottomRightRadius: 4,
+              }}>
+              <View style={{flex: 1, alignItems: 'center'}}>
+                <Image source={require('./icon/pay.png')}></Image>
+                <Text
+                  style={{
+                    fontSize: 13,
+                    color: 'white',
+                    marginTop: 15,
+                    fontWeight: 'bold',
+                  }}>
+                  Pay
+                </Text>
               </View>
-              <View style={{ flex:1, alignItems:"center"}}>
-              <Image source={require('./icon/nearby.png')}></Image>
-                <Text style={{fontSize: 13, color:'white', marginTop:15, fontWeight:"bold"}}>Nearby</Text>
+              <View style={{flex: 1, alignItems: 'center'}}>
+                <Image source={require('./icon/nearby.png')}></Image>
+                <Text
+                  style={{
+                    fontSize: 13,
+                    color: 'white',
+                    marginTop: 15,
+                    fontWeight: 'bold',
+                  }}>
+                  Nearby
+                </Text>
               </View>
-              <View style={{ flex:1, alignItems:"center"}}>
-              <Image source={require('./icon/topup.png')}></Image>
-                <Text style={{fontSize: 13, color:'white', marginTop:15, fontWeight:"bold"}}>Top Up</Text>
+              <View style={{flex: 1, alignItems: 'center'}}>
+                <Image source={require('./icon/topup.png')}></Image>
+                <Text
+                  style={{
+                    fontSize: 13,
+                    color: 'white',
+                    marginTop: 15,
+                    fontWeight: 'bold',
+                  }}>
+                  Top Up
+                </Text>
               </View>
-              <View style={{ flex:1, alignItems:"center"}}>
-              <Image source={require('./icon/more.png')}></Image>
-                <Text style={{fontSize: 13, color:'white', marginTop:15, fontWeight:"bold"}}>More</Text>
+              <View style={{flex: 1, alignItems: 'center'}}>
+                <Image source={require('./icon/more.png')}></Image>
+                <Text
+                  style={{
+                    fontSize: 13,
+                    color: 'white',
+                    marginTop: 15,
+                    fontWeight: 'bold',
+                  }}>
+                  More
+                </Text>
               </View>
             </View>
-
           </View>
+        {/* Main Feature */}
+          <View style={{flexDirection:"row", flexWrap:'wrap', marginTop:18}}>
+            <View style={{justifyContent:"space-between", flexDirection:"row", width:'100%',marginBottom:18}}>
+              <View style={{ width:'25%', alignItems:'center'}}>
+                  <View style={{width:58, height:58, borderWidth:1, borderColor:'#efefef', borderRadius:18, justifyContent:"center", alignItems:"center"}}>
+                    <Image source={require('./icon/go-ride.png')}></Image>
+                  </View>
+                    <Text style={{fontSize:11, fontWeight:'bold', textAlign:"center", marginTop:6}}>GO-RIDE</Text>
+              </View>
+              <View style={{ width:'25%', alignItems:'center'}}>
+                  <View style={{width:58, height:58, borderWidth:1, borderColor:'#efefef', borderRadius:18, justifyContent:"center", alignItems:"center"}}>
+                    <Image source={require('./icon/go-car.png')}></Image>
+                  </View>
+                    <Text style={{fontSize:11, fontWeight:'bold', textAlign:"center", marginTop:6}}>GO-CAR</Text>
+              </View>
+              <View style={{ width:'25%', alignItems:'center'}}>
+                  <View style={{width:58, height:58, borderWidth:1, borderColor:'#efefef', borderRadius:18, justifyContent:"center", alignItems:"center"}}>
+                    <Image source={require('./icon/go-bluebird.png')}></Image>
+                  </View>
+                    <Text style={{fontSize:11, fontWeight:'bold', textAlign:"center", marginTop:6}}>GO-BLUEBIRD</Text>
+              </View>
+              <View style={{ width:'25%', alignItems:'center'}}>
+                  <View style={{width:58, height:58, borderWidth:1, borderColor:'#efefef', borderRadius:18, justifyContent:"center", alignItems:"center"}}>
+                    <Image source={require('./icon/go-send.png')}></Image>
+                  </View>
+                    <Text style={{fontSize:11, fontWeight:'bold', textAlign:"center", marginTop:6}}>GO-SEND</Text>
+              </View>
+            </View>
+            <View style={{justifyContent:"space-between", flexDirection:"row", width:'100%'}}>
+            <View style={{ width:'25%', alignItems:'center'}}>
+                  <View style={{width:58, height:58, borderWidth:1, borderColor:'#efefef', borderRadius:18, justifyContent:"center", alignItems:"center"}}>
+                    <Image source={require('./icon/go-deals.png')}></Image>
+                  </View>
+                    <Text style={{fontSize:11, fontWeight:'bold', textAlign:"center", marginTop:6}}>GO-DEALS</Text>
+              </View>
+              <View style={{ width:'25%', alignItems:'center'}}>
+                  <View style={{width:58, height:58, borderWidth:1, borderColor:'#efefef', borderRadius:18, justifyContent:"center", alignItems:"center"}}>
+                    <Image source={require('./icon/go-pulsa.png')}></Image>
+                  </View>
+                    <Text style={{fontSize:11, fontWeight:'bold', textAlign:"center", marginTop:6}}>GO-PULSA</Text>
+              </View>
+              <View style={{ width:'25%', alignItems:'center'}}>
+                  <View style={{width:58, height:58, borderWidth:1, borderColor:'#efefef', borderRadius:18, justifyContent:"center", alignItems:"center"}}>
+                    <Image source={require('./icon/go-food.png')}></Image>
+                  </View>
+                    <Text style={{fontSize:11, fontWeight:'bold', textAlign:"center", marginTop:6}}>GO-FOOD</Text>
+              </View>
+              <View style={{ width:'25%', alignItems:'center'}}>
+                  <View style={{width:58, height:58, borderWidth:1, borderColor:'#efefef', borderRadius:18, justifyContent:"center", alignItems:"center"}}>
+                    <Image source={require('./icon/go-more.png')}></Image>
+                  </View>
+                    <Text style={{fontSize:11, fontWeight:'bold', textAlign:"center", marginTop:6}}>MORE</Text>
+              </View>
+          </View>
+            </View>
         </View>
+        
 
+        {/* Footer */}
         <View style={{height: 54, flexDirection: 'row'}}>
           <View
             style={{
