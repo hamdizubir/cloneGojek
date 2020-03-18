@@ -16,6 +16,8 @@ import {
   Text,
   StatusBar,
   TextInput,
+  Button,
+  TouchableOpacity,
 } from 'react-native';
 
 import {
@@ -353,11 +355,21 @@ const App: () => React$Node = () => {
           <View style={{backgroundColor:'#f2f2f4', height:17, marginTop:20}}></View>
           {/* News Section */}
           <View>
-            <View style={{paddingTop:16, paddingHorizontal:16,}}>
+            <View style={{paddingTop:16, paddingHorizontal:16, backgroundColor:'white'}}>
+              <View style={{position:'relative',}}>
               <Image source={require('./dummy/sepak-bola.jpg')} style={{height:170, width:'100%', borderRadius:6}}></Image>
-            <View style={{paddingTop:16, paddingBottom:20}}>
+              <View style={{width:'100%', height:'100%', position:'absolute', top:0, left:0, backgroundColor:'black', opacity:0.2, borderRadius:6}}></View>
+              <View style={{height:15, width:55, position:'absolute', top:16, left:16}}>
+                <Image style={{height:undefined, width:undefined, resizeMode:"contain",flex:1}} source={require('./logo/white.png')}></Image>
+              </View>
+              </View>
+            <View style={{paddingTop:16, paddingBottom:20, borderBottomColor: '#e8e9ed', borderBottomWidth:1, marginBottom:20, backgroundColor:'white'}}>
               <Text style={{fontSize:16, fontWeight:'bold', color:'1c1c1c'}}>GO-NEWS</Text>
-              <Text style={{fontSize:14, fontWeight:'500', color:'#7a7a7a'}}>Dimas Drajat selamatkan pinalti, Timnas U-23 kalahkan Brunei </Text>
+              <Text style={{fontSize:14, fontWeight:'normal', color:'#7a7a7a', marginBottom:11}}>Dimas Drajat selamatkan pinalti, Timnas U-23 kalahkan Brunei </Text>
+              <TouchableOpacity style={{backgroundColor:'#61A756', paddingHorizontal:12, paddingVertical:11, alignSelf:"flex-end", borderRadius:4}}>
+                <Text style={{color:'white', textAlign:'center'}}>READ</Text>
+              </TouchableOpacity>
+              
             </View>
             </View>
           </View>
