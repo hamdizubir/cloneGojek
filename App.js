@@ -365,6 +365,7 @@ const App: () => React$Node = () => {
                 paddingTop: 16,
                 paddingHorizontal: 16,
                 backgroundColor: 'white',
+                marginBottom: 16,
               }}>
               <View style={{position: 'relative'}}>
                 <Image
@@ -428,15 +429,77 @@ const App: () => React$Node = () => {
                     alignSelf: 'flex-end',
                     borderRadius: 4,
                   }}>
-                  <Text style={{color: 'white', textAlign: 'center', fontWeight:'bold'}}>
+                  <Text
+                    style={{
+                      color: 'white',
+                      textAlign: 'center',
+                      fontWeight: 'bold',
+                    }}>
                     READ
                   </Text>
                 </TouchableOpacity>
               </View>
             </View>
           </View>
+          {/* Internal information section */}
+          <View style={{marginBottom: 16, paddingHorizontal:16}}>
+            <View style={{height: 15, width: 60, marginLeft:-4}}>
+              <Image
+                style={{
+                  height: undefined,
+                  width: undefined,
+                  resizeMode: 'contain',
+                  flex: 1,
+                }}
+                source={require('./logo/gojek.png')}></Image>
+            </View>
+            <Text
+              style={{
+                fontSize: 17,
+                fontWeight: 'bold',
+                color: '#1c1c1c',
+                marginTop: 15,
+                marginBottom:20,
+              }}>
+              COMPLETE YOUR PROFILE
+            </Text>
+            <View style={{flexDirection:'row'}}>
+              <View>
+                <Image source={require('./dummy/facebook-connect.png')}></Image>
+              </View>
+              <View style={{marginLeft:16, flex:1, marginBottom:16}}>
+                <Text style={{fontSize:15, fontWeight:'bold', color:'#4a4a4a' }}>Connect with Facebook</Text>
+                <Text style={{fontSize:15, fontWeight:'normal', color:'#4a4a4a', width:'70%' }}>Login faster without verification code</Text>
+              </View>
+            </View>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#61A756',
+                paddingHorizontal: 12,
+                paddingVertical: 11,
+                alignSelf: 'flex-end',
+                borderRadius: 4,
+              }}>
+              <Text
+                style={{
+                  color: 'white',
+                  textAlign: 'center',
+                  fontWeight: 'bold',
+                }}>
+                CONNECT
+              </Text>
+            </TouchableOpacity>
+          </View>
+
+          <View
+            style={{
+              borderBottomColor: '#e8e9ed',
+              borderBottomWidth: 1,
+              marginBottom: 16,
+            }}></View>
+
           {/* Go-food banner */}
-          <View style={{padding: 16}}>
+          <View style={{paddingHorizontal: 16}}>
             <View style={{position: 'relative'}}>
               <Image
                 source={require('./dummy/food-banner.jpg')}
@@ -475,13 +538,18 @@ const App: () => React$Node = () => {
                   bottom: 0,
                   width: '100%',
                   flexDirection: 'row',
-                  alignItems:'center',
-                  paddingHorizontal:16,
-                  paddingBottom:16
+                  alignItems: 'center',
+                  paddingHorizontal: 16,
+                  paddingBottom: 16,
                 }}>
                 <View>
                   <Text
-                    style={{fontSize: 18, fontWeight: 'bold', color: 'white', marginBottom:8}}>
+                    style={{
+                      fontSize: 18,
+                      fontWeight: 'bold',
+                      color: 'white',
+                      marginBottom: 8,
+                    }}>
                     Free Go-food Voucher
                   </Text>
                   <Text
@@ -489,7 +557,7 @@ const App: () => React$Node = () => {
                     Quick, before they run out!
                   </Text>
                 </View>
-                <View style={{flex:1, paddingLeft:12,}}>
+                <View style={{flex: 1, paddingLeft: 12}}>
                   <TouchableOpacity
                     style={{
                       backgroundColor: '#61A756',
@@ -498,7 +566,12 @@ const App: () => React$Node = () => {
                       alignSelf: 'stretch',
                       borderRadius: 4,
                     }}>
-                    <Text style={{color: 'white', textAlign: 'center', fontWeight:'bold', }}>
+                    <Text
+                      style={{
+                        color: 'white',
+                        textAlign: 'center',
+                        fontWeight: 'bold',
+                      }}>
                       GET VOUCHER
                     </Text>
                   </TouchableOpacity>
@@ -506,8 +579,12 @@ const App: () => React$Node = () => {
               </View>
             </View>
           </View>
-          <View style={{borderBottomColor:'#e8e9ed',borderBottomWidth:1, marginBottom:20}}></View>
-          
+          <View
+            style={{
+              borderBottomColor: '#e8e9ed',
+              borderBottomWidth: 1,
+              marginBottom: 20,
+            }}></View>
         </ScrollView>
 
         {/* Footer */}
