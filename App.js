@@ -349,30 +349,165 @@ const App: () => React$Node = () => {
                 </Text>
               </View>
             </View>
-            <View style={{backgroundColor:'grey', height:30}}></View>
+            <View style={{backgroundColor: 'grey', height: 30}}></View>
           </View>
           {/* Grey Space */}
-          <View style={{backgroundColor:'#f2f2f4', height:17, marginTop:20}}></View>
+          <View
+            style={{
+              backgroundColor: '#f2f2f4',
+              height: 17,
+              marginTop: 20,
+            }}></View>
           {/* News Section */}
           <View>
-            <View style={{paddingTop:16, paddingHorizontal:16, backgroundColor:'white'}}>
-              <View style={{position:'relative',}}>
-              <Image source={require('./dummy/sepak-bola.jpg')} style={{height:170, width:'100%', borderRadius:6}}></Image>
-              <View style={{width:'100%', height:'100%', position:'absolute', top:0, left:0, backgroundColor:'black', opacity:0.2, borderRadius:6}}></View>
-              <View style={{height:15, width:55, position:'absolute', top:16, left:16}}>
-                <Image style={{height:undefined, width:undefined, resizeMode:"contain",flex:1}} source={require('./logo/white.png')}></Image>
+            <View
+              style={{
+                paddingTop: 16,
+                paddingHorizontal: 16,
+                backgroundColor: 'white',
+              }}>
+              <View style={{position: 'relative'}}>
+                <Image
+                  source={require('./dummy/sepak-bola.jpg')}
+                  style={{height: 170, width: '100%', borderRadius: 6}}></Image>
+                <View
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    backgroundColor: 'black',
+                    opacity: 0.2,
+                    borderRadius: 6,
+                  }}></View>
+                <View
+                  style={{
+                    height: 15,
+                    width: 55,
+                    position: 'absolute',
+                    top: 16,
+                    left: 16,
+                  }}>
+                  <Image
+                    style={{
+                      height: undefined,
+                      width: undefined,
+                      resizeMode: 'contain',
+                      flex: 1,
+                    }}
+                    source={require('./logo/white.png')}></Image>
+                </View>
               </View>
+              <View
+                style={{
+                  paddingTop: 16,
+                  paddingBottom: 20,
+                  borderBottomColor: '#e8e9ed',
+                  borderBottomWidth: 1,
+                  backgroundColor: 'white',
+                }}>
+                <Text
+                  style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c'}}>
+                  GO-NEWS
+                </Text>
+                <Text
+                  style={{
+                    fontSize: 14,
+                    fontWeight: 'normal',
+                    color: '#7a7a7a',
+                    marginBottom: 11,
+                  }}>
+                  Dimas Drajat selamatkan pinalti, Timnas U-23 kalahkan Brunei
+                </Text>
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: '#61A756',
+                    paddingHorizontal: 12,
+                    paddingVertical: 11,
+                    alignSelf: 'flex-end',
+                    borderRadius: 4,
+                  }}>
+                  <Text style={{color: 'white', textAlign: 'center', fontWeight:'bold'}}>
+                    READ
+                  </Text>
+                </TouchableOpacity>
               </View>
-            <View style={{paddingTop:16, paddingBottom:20, borderBottomColor: '#e8e9ed', borderBottomWidth:1, marginBottom:20, backgroundColor:'white'}}>
-              <Text style={{fontSize:16, fontWeight:'bold', color:'1c1c1c'}}>GO-NEWS</Text>
-              <Text style={{fontSize:14, fontWeight:'normal', color:'#7a7a7a', marginBottom:11}}>Dimas Drajat selamatkan pinalti, Timnas U-23 kalahkan Brunei </Text>
-              <TouchableOpacity style={{backgroundColor:'#61A756', paddingHorizontal:12, paddingVertical:11, alignSelf:"flex-end", borderRadius:4}}>
-                <Text style={{color:'white', textAlign:'center'}}>READ</Text>
-              </TouchableOpacity>
-              
-            </View>
             </View>
           </View>
+          {/* Go-food banner */}
+          <View style={{padding: 16}}>
+            <View style={{position: 'relative'}}>
+              <Image
+                source={require('./dummy/food-banner.jpg')}
+                style={{height: 170, width: '100%', borderRadius: 6}}></Image>
+              <View
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  backgroundColor: 'black',
+                  opacity: 0.15,
+                  borderRadius: 6,
+                }}></View>
+              <View
+                style={{
+                  height: 15,
+                  width: 55,
+                  position: 'absolute',
+                  top: 16,
+                  left: 16,
+                }}>
+                <Image
+                  style={{
+                    height: undefined,
+                    width: undefined,
+                    resizeMode: 'contain',
+                    flex: 1,
+                  }}
+                  source={require('./logo/white.png')}></Image>
+              </View>
+              <View
+                style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  width: '100%',
+                  flexDirection: 'row',
+                  alignItems:'center',
+                  paddingHorizontal:16,
+                  paddingBottom:16
+                }}>
+                <View>
+                  <Text
+                    style={{fontSize: 18, fontWeight: 'bold', color: 'white', marginBottom:8}}>
+                    Free Go-food Voucher
+                  </Text>
+                  <Text
+                    style={{fontSize: 14, fontWeight: '400', color: 'white'}}>
+                    Quick, before they run out!
+                  </Text>
+                </View>
+                <View style={{flex:1, paddingLeft:12,}}>
+                  <TouchableOpacity
+                    style={{
+                      backgroundColor: '#61A756',
+                      paddingHorizontal: 12,
+                      paddingVertical: 11,
+                      alignSelf: 'stretch',
+                      borderRadius: 4,
+                    }}>
+                    <Text style={{color: 'white', textAlign: 'center', fontWeight:'bold', }}>
+                      GET VOUCHER
+                    </Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={{borderBottomColor:'#e8e9ed',borderBottomWidth:1, marginBottom:20}}></View>
+          
         </ScrollView>
 
         {/* Footer */}
