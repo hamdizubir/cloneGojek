@@ -442,8 +442,8 @@ const App: () => React$Node = () => {
             </View>
           </View>
           {/* Internal information section */}
-          <View style={{marginBottom: 16, paddingHorizontal:16}}>
-            <View style={{height: 15, width: 60, marginLeft:-4}}>
+          <View style={{marginBottom: 16, paddingHorizontal: 16}}>
+            <View style={{height: 15, width: 60, marginLeft: -4}}>
               <Image
                 style={{
                   height: undefined,
@@ -459,17 +459,28 @@ const App: () => React$Node = () => {
                 fontWeight: 'bold',
                 color: '#1c1c1c',
                 marginTop: 15,
-                marginBottom:20,
+                marginBottom: 20,
               }}>
               COMPLETE YOUR PROFILE
             </Text>
-            <View style={{flexDirection:'row'}}>
+            <View style={{flexDirection: 'row'}}>
               <View>
                 <Image source={require('./dummy/facebook-connect.png')}></Image>
               </View>
-              <View style={{marginLeft:16, flex:1, marginBottom:16}}>
-                <Text style={{fontSize:15, fontWeight:'bold', color:'#4a4a4a' }}>Connect with Facebook</Text>
-                <Text style={{fontSize:15, fontWeight:'normal', color:'#4a4a4a', width:'70%' }}>Login faster without verification code</Text>
+              <View style={{marginLeft: 16, flex: 1, marginBottom: 16}}>
+                <Text
+                  style={{fontSize: 15, fontWeight: 'bold', color: '#4a4a4a'}}>
+                  Connect with Facebook
+                </Text>
+                <Text
+                  style={{
+                    fontSize: 15,
+                    fontWeight: 'normal',
+                    color: '#4a4a4a',
+                    width: '70%',
+                  }}>
+                  Login faster without verification code
+                </Text>
               </View>
             </View>
             <TouchableOpacity
@@ -530,7 +541,7 @@ const App: () => React$Node = () => {
                     resizeMode: 'contain',
                     flex: 1,
                   }}
-                  source={require('./logo/white.png')}></Image>
+                  source={require('./logo/go-food.png')}></Image>
               </View>
               <View
                 style={{
@@ -578,6 +589,203 @@ const App: () => React$Node = () => {
                 </View>
               </View>
             </View>
+          </View>
+
+          <View
+            style={{
+              borderBottomColor: '#e8e9ed',
+              borderBottomWidth: 1,
+              marginBottom: 20,
+            }}></View>
+
+          {/* Nearby go Food */}
+          <View style={{marginBottom: 20}}>
+            <View
+              style={{
+                height: 15,
+                width: 60,
+                marginLeft: -4,
+                marginLeft: 16,
+              }}>
+              <Image
+                style={{
+                  height: undefined,
+                  width: undefined,
+                  flex: 1,
+                  // backgroundColor:'grey',
+                  resizeMode: 'contain',
+                }}
+                source={require('./logo/go-food.png')}></Image>
+            </View>
+
+            <View
+              style={{
+                flex: 1,
+                flexDirection: 'row',
+                // backgroundColor: 'red',
+                justifyContent: 'space-between',
+                marginBottom: 16,
+              }}>
+              <Text
+                style={{
+                  fontSize: 17,
+                  fontWeight: 'bold',
+                  marginHorizontal: 16,
+                  color: '#1c1c1c',
+                }}>
+                Nearby Restaurant
+              </Text>
+              <Text
+                style={{
+                  fontSize: 17,
+                  fontWeight: 'bold',
+                  marginHorizontal: 16,
+                  color: '#61A756',
+                }}>
+                See All
+              </Text>
+            </View>
+            <ScrollView horizontal={true} style={{paddingHorizontal:16}}>
+              <View
+                style={{
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginRight:16,
+                }}>
+                <View
+                  style={{
+                    height: 150,
+                    width: 150,
+                  }}>
+                  <Image
+                    source={require('./dummy/go-food-kfc.jpg')}
+                    style={{
+                      borderRadius: 10,
+                      height: undefined,
+                      width: undefined,
+                      flex: 1,
+                      resizeMode: 'cover',
+                    }}></Image>
+                </View>
+                <Text
+                  style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c',
+                  marginTop:8}}>
+                  KFC
+                </Text>
+              </View>
+              <View
+                style={{
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginRight:16,
+                }}>
+                <View
+                  style={{
+                    height: 150,
+                    width: 150,
+                    // backgroundColor: 'pink',
+                  }}>
+                  <Image
+                    source={require('./dummy/go-food-banka.jpg')}
+                    style={{
+                      borderRadius: 10,
+                      height: undefined,
+                      width: undefined,
+                      flex: 1,
+                      resizeMode: 'cover',
+                    }}></Image>
+                </View>
+                <Text
+                  style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c',marginTop:8}}>
+                  Martabak Bangka
+                </Text>
+              </View>
+              <View
+                style={{
+                  
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginRight:16,
+                }}>
+                <View
+                  style={{
+                    height: 150,
+                    width: 150,
+                  }}>
+                  <Image
+                    source={require('./dummy/go-food-gm.jpg')}
+                    style={{
+                      borderRadius: 10,
+                      height: undefined,
+                      width: undefined,
+                      flex: 1,
+                      resizeMode: 'cover',
+                    }}></Image>
+                </View>
+                <Text
+                  style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c',marginTop:8}}>
+                  Bakmi GM
+                </Text>
+              </View>
+              <View
+                style={{
+                  
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginRight:16,
+                  
+                }}>
+                <View
+                  style={{
+                    height: 150,
+                    width: 150,
+                    
+                  }}>
+                  <Image
+                    source={require('./dummy/go-food-orins.jpg')}
+                    style={{
+                      borderRadius: 10,
+                      height: undefined,
+                      width: undefined,
+                      flex: 1,
+                      resizeMode: 'cover',
+                    }}></Image>
+                </View>
+                <Text
+                  style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c', marginTop:8}}>
+                  Martabak Orins
+                </Text>
+              </View>
+              <View
+                style={{
+                  
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginRight:16,
+                  
+                }}>
+                <View
+                  style={{
+                    height: 150,
+                    width: 150,
+                    
+                  }}>
+                  <Image
+                    source={require('./dummy/go-food-pak-boss.jpg')}
+                    style={{
+                      borderRadius: 10,
+                      height: undefined,
+                      width: undefined,
+                      flex: 1,
+                      resizeMode: 'cover',
+                    }}></Image>
+                </View>
+                <Text
+                  style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c', marginTop:8}}>
+                  Gehu Pak Boss
+                </Text>
+              </View>
+            </ScrollView>
           </View>
           <View
             style={{
