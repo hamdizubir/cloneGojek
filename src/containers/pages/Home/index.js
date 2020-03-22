@@ -6,8 +6,8 @@ import GoNews from '../../../components/molecules/GoNews';
 import SearchFeature from '../../../components/molecules/SearchFeature';
 import HomeGoPay from '../../../containers/organisms/HomeGoPay';
 import HomeMainFeature from '../../../containers/organisms/HomeMainFeature';
-import NavBar from '../../../containers/organisms/NavBar/Index';
 import ScrollableProduct from '../../../containers/organisms/ScrollableProduct';
+import NavBar from '../../../containers/organisms/NavBar';
 
 export default class Home extends Component {
   render() {
