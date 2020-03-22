@@ -69,7 +69,8 @@ const GoNews = (props) => {
             paddingVertical: 11,
             alignSelf: 'flex-end',
             borderRadius: 4,
-          }}>
+          }}
+          onPress={props.onPress}>
           <Text
             style={{
               color: 'white',
